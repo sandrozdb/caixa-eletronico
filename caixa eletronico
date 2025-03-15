@@ -6,7 +6,7 @@ programa
 		real saldo = 1000.00
 		inteiro opcao
 		real saque
-
+    
 		enquanto(verdadeiro) {
 			escreva("===Caixa Eletrônico===\n")
 			escreva("1 - Consultar Saldo\n")
@@ -29,7 +29,7 @@ programa
       se(opcao == 3) {
 				escreva("\nObrigado Por Utilizar Nossos Serviços\n") }
 			se(saque > saldo) {
-				escreva("\nSaldo Insuficiente") }
+				escreva("\nSaldo Insuficiente\n") }
 			senao se(saque <=0) {
 				escreva("\nValor Inválido - Digite um Valor Maior que 0\n") }
 			senao{
