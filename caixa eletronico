@@ -15,21 +15,29 @@ programa
 			escreva("Escolha Uma Opção: ")
 			leia(opcao) 
 
-			se(opcao == 1) {
+      se(opcao == 1) {
 				escreva("\nSeu saldo atual é: R$",saldo,"\n") }
+      se(opcao == 3) {
+				escreva("\nObrigado Por Utilizar Nossos Serviços\n") }
+      se(opcao > 3) {
+        escreva ("\nOpção Inválida - Por Favor Digite Novamente\n") }
+      se(opcao <= 0) {
+        escreva ("\nOpção Inválida - Por Favor Digite Novamente\n") }
 			senao se(opcao == 2) {
 				escreva("\nDigite o valor desejado: R$ ") 
 				leia(saque) 
+      se(opcao == 3) {
+				escreva("\nObrigado Por Utilizar Nossos Serviços\n") }
 			se(saque > saldo) {
 				escreva("\nSaldo Insuficiente") }
 			senao se(saque <=0) {
-				escreva("\nValor Inválido - Digite um Valor Maior que 0") }
+				escreva("\nValor Inválido - Digite um Valor Maior que 0\n") }
 			senao{
 				saldo = saldo - saque
 				escreva("\nSaque Realizado Com Sucesso\n")
 				escreva("\nNovo Saldo: R$", saldo, "\n")
 			}
-			
+	
 }			
 			
 }	
