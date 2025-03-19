@@ -26,8 +26,6 @@ programa
 			senao se(opcao == 2) {
 				escreva("\nDigite o valor desejado: R$ ") 
 				leia(saque) 
-      se(opcao == 3) {
-				escreva("\nObrigado Por Utilizar Nossos Serviços\n") }
 			se(saque > saldo) {
 				escreva("\nSaldo Insuficiente\n") }
 			senao se(saque <=0) {
